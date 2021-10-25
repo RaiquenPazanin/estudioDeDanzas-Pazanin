@@ -1,0 +1,18 @@
+.bodyGalery{
+    background-image: url("../../images/logoNatacha.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    &__title{
+        color: purple;
+        font-size: 5rem;
+        font-weight: bolder;
+    }
+    img {
+      width: 20rem;
+      height: 15rem;
+    }
+    figcaption {
+      display: none;
+    }
+}

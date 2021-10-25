@@ -1,0 +1,48 @@
+@import "./mediaQueri";
+
+.descriptionStaff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 0.5rem;
+
+    &__imgPerf {
+      border-radius: 100%;
+      width: 32.5rem;
+      height: 32.5rem;
+      -webkit-animation: scale-up-center 1s ease-out 1s both;
+        animation: scale-up-center 1s ease-out 1s both;
+    }
+    
+    &__textPhar{
+      font-size: 1.125rem;
+      font-family: 'Urbanist', sans-serif;
+      text-align: justify;
+    }
+}
+
+/*MEDIAQUERI*/
+
+@media screen and (max-width: 320px) {
+  .descriptionStaff{
+    flex-direction: column;
+    justify-content: center;
+    
+    &__imgPerf {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .descriptionStaff{
+    flex-direction: column;
+    justify-content: center;
+    &__imgPerf {
+      width: 16rem;
+      height: 16rem;
+    }
+  }
+}

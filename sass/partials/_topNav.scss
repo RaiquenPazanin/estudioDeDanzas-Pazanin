@@ -1,0 +1,40 @@
+/*BARRA DE NAVEGACION*/
+
+.topNav {
+    background: rgb(138,15,135);
+    background: -moz-linear-gradient(90deg, rgba(138,15,135,0.7346288857339811) 0%, rgba(218,16,210,0.2556372890953257) 36%, rgba(252,0,255,1) 75%);
+    background: -webkit-linear-gradient(90deg, rgba(138,15,135,0.7346288857339811) 0%, rgba(218,16,210,0.2556372890953257) 36%, rgba(252,0,255,1) 75%);
+    background: linear-gradient(90deg, rgba(161, 102, 160, 0.735) 0%, rgba(218,16,210,0.2556372890953257) 36%, rgba(252,0,255,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a0f87",endColorstr="#fc00ff",GradientType=1);
+
+    &__imgNavSize{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 10%;
+      }
+
+    &__item{
+        color: white;
+        &--activo{
+            color: black;
+            font-weight: bolder;
+            background-color: violet;
+         }
+    }
+}
+
+#colorItemTopNav{
+  color: white;
+}
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 480px) {
+    .topNav{
+      flex-direction: column;
+    }
+    .topNav ul{
+      flex-direction: column;
+      
+    }
+  }

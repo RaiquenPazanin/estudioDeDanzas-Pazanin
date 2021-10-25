@@ -1,0 +1,87 @@
+/* SECCION STAFF */
+.bodyStaff{
+  background-image: url("../../images/logoNatacha.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: grid;
+  justify-content: center;
+  &__title{
+    color: purple;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: 'Urbanist', sans-serif;
+  text-align: center;
+  -webkit-animation: imagenStaff 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: imagenStaff 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  &__subTitle{
+    text-align: center;
+  }
+}
+
+/*KEYFRAMES*/
+
+@-webkit-keyframes  imagenStaff {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*MEDIAQUERI*/
+@media screen and (max-width: 320px) {
+  .bodyStaff{
+    &__title{
+    font-size: 1rem;
+    }
+    &__subTitle{
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bodyStaff{
+    &__title{
+    font-size: 2rem;
+    }
+    &__subTitle{
+      text-align: center;
+    }
+  }
+}

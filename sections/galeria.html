@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="../css/bootstrap-grid.css" />
+      <link rel="stylesheet" href="../css/bootstrap.css" />
+      <meta name="vieport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="DANZA, FOTOS, MUESTRA ANUAL">
+      <title>Galeria</title>
+      <meta name="description" content="Te mostramos algunas fotos de nuestras muestras y clases. Animate!!!">
+      <link rel="stylesheet" href="../myCss/main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="../myCss/photoswipe/dist/photoswipe.css"> 
+      <link rel="stylesheet" href="../myCss/photoswipe/dist/default-skin/default-skin.css""> 
+      <script src="../js/galery/photoswipe.min.js"></script>
+      <script src="../js/galery/photoswipe-ui-default.min.js"></script>
+    </head>
+    <body>
+      <div id="grilla">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+          <div class="container-fluid topNav">
+              <a class="navbar-brand" href="../index.html">
+                  <img src="../images/logoNatacha.jpg" class="topNav__imgNavSize">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav align-items-center topNav__list">
+                  <li class="nav-item mt-0 mx-3">
+                      <a class="nav-link topNav__item" aria-current="page" href="../index.html" id="colorItemTopNav">Home</a>
+                  </li>
+                  <li class="nav-item mt-0 mx-3 topNav__item ">
+                      <a class="nav-link topNav__item" href="./staff.html" id="colorItemTopNav">Staff</a>
+                  </li>
+                  <li class="nav-item mt-0 mx-3">
+                      <a class="nav-link topNav__item" href="./horarios.html" id="colorItemTopNav">Horarios</a>
+                  </li>
+                  <li class="nav-item mt-0 mx-3">
+                      <a class="nav-link topNav__item topNav__item--activo" href="./galeria.html" id="colorItemTopNav">Galería</a>
+                  </li>
+                  <li class="nav-item mt-0 mx-3">
+                      <a class="nav-link topNav__item" href="./contacto.html" id="colorItemTopNav">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="bodyGalery">
+          <main>
+            <div class="row text-center">
+              <span class="bodyGalery__title">Algunas fotos</span>
+            </div>
+            <div class="row text-center" itemscope itemtype="http://schema.org/ImageGallery">
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-3 col-sm-6 m-3 p-1">
+                <a href="../images/galery/img-1.JPG" itemprop="contentUrl" data-size="1024x1024">
+                    <img src="../images/galery/img-1.JPG" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">Image caption  1</figcaption>
+              </figure>
+          
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-3 col-sm-6 m-3 p-1">
+                <a href="../images/galery/img-2.JPG" itemprop="contentUrl" data-size="964x1024">
+                    <img src="../images/galery/img-2.JPG" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">Image caption 2</figcaption>
+              </figure>
+          
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"  class="col-lg-3 col-sm-6 m-3">
+                <a href="../images/galery/img-3.JPG" itemprop="contentUrl" data-size="1024x683">
+                    <img src="../images/galery/img-3.JPG" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">Image caption 3</figcaption>
+              </figure>
+          
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-lg-3 col-sm-6 m-3">
+                <a href="../images/galery/img-4.JPG" itemprop="contentUrl" data-size="1024x768">
+                    <img src="../images/galery/img-4.JPG"  itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">Image caption 4</figcaption>
+              </figure>
+            </div>
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="pswp__bg"></div>
+              <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                  <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                  </div>
+                  <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                  <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                  <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <footer class="footer d-flex justify-content-between">
+          <div class="mx-3">
+              <i class="bi bi-envelope-fill footer__icons"></i>
+              <span class="px-2 footer__icons" id="colorItemTopNav">natachaDanza@xxxx.com.ar</span>
+              
+          </div>
+          <div class="mx-3">
+              <i class="bi bi-telephone-fill footer__icons"></i>
+              <span class="px-2 footer__icons" id="colorItemTopNav">11-1114-1111</span> 
+          </div>
+        </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="../js/galery/galery.js"></script>
+    </body>
+</html>
