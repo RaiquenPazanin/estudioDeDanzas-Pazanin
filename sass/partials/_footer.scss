@@ -6,7 +6,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a0f87",endColorstr="#fc00ff",GradientType=1);
     margin-bottom: 0rem;
     &__icons{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: white;
     }
 }
@@ -15,7 +15,7 @@
 @media screen and (max-width: 320px) {
         .footer{
             &__icons{
-                font-size: 0.5rem;
+                font-size: 0.25rem;
             }
         }
     }
@@ -24,7 +24,23 @@
 @media screen and (max-width: 768px) {
         .footer{
             &__icons{
-                font-size: 0.75rem;
+                font-size: 0.5rem;
             }
         }
     }
+
+    @media screen and (max-width: 1440px) {
+        .footer{
+            &__icons{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+@media screen and (min-width: 2560px) {
+    .footer{
+        &__icons{
+            font-size: 3rem;
+        }
+    }
+}

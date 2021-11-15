@@ -1,22 +1,15 @@
-@import "./mediaQueri";
-
 .descriptionStaff{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 1rem;
+   margin: 1rem;
     padding: 0.5rem;
 
     &__imgPerf {
       border-radius: 100%;
       width: 32.5rem;
       height: 32.5rem;
-      -webkit-animation: scale-up-center 1s ease-out 1s both;
-        animation: scale-up-center 1s ease-out 1s both;
     }
     
     &__textPhar{
-      font-size: 1.125rem;
+      font-size: 2rem;
       font-family: 'Urbanist', sans-serif;
       text-align: justify;
     }
@@ -26,23 +19,38 @@
 
 @media screen and (max-width: 320px) {
   .descriptionStaff{
-    flex-direction: column;
-    justify-content: center;
-    
     &__imgPerf {
-      width: 8rem;
-      height: 8rem;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &__textPhar{
+      font-size: 2rem;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .descriptionStaff{
-    flex-direction: column;
-    justify-content: center;
     &__imgPerf {
-      width: 16rem;
-      height: 16rem;
+      width: 2rem;
+      height: 2rem;
+    }
+    &__textPhar{
+      font-size: 3rem;
     }
   }
+}
+
+@media screen and (min-width: 2560px) {
+  .descriptionStaff{
+    &__imgPerf {
+      width: 60rem;
+      height: 60rem;
+     }
+     
+     &__textPhar{
+       font-size: 4rem;
+     }
+ }
 }

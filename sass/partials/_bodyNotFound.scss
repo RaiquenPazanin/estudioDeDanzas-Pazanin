@@ -1,0 +1,21 @@
+.bodyNotFound{
+    background-color: violet;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-size: 10rem;
+    }
+
+    &__linkHome{
+        width: 8rem;
+        height: 4rem;
+        background-color: purple;
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+}

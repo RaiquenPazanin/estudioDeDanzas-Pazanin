@@ -1,46 +1,27 @@
 /* SECCION STAFF */
 .bodyStaff{
-  background-image: url("../../images/logoNatacha.png");
+  background-image: url("../../images/staff/logoNatacha.png");
   background-repeat: no-repeat;
   background-position: center center;
   display: grid;
   justify-content: center;
   &__title{
     color: purple;
-  font-weight: bold;
-  font-size: 3rem;
+  font-weight: bolder;
+  font-size: 6rem;
   font-family: 'Urbanist', sans-serif;
   text-align: center;
-  -webkit-animation: imagenStaff 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: imagenStaff 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+            animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
   }
   &__subTitle{
     text-align: center;
+    font-size: 4rem;
   }
+  
 }
 
 /*KEYFRAMES*/
-
-@-webkit-keyframes  imagenStaff {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 
 @-webkit-keyframes scale-up-center {
   0% {
@@ -63,6 +44,9 @@
   }
 }
 
+
+
+
 /*MEDIAQUERI*/
 @media screen and (max-width: 320px) {
   .bodyStaff{
@@ -70,7 +54,7 @@
     font-size: 1rem;
     }
     &__subTitle{
-      text-align: center;
+      font-size: 0.5rem;
     }
   }
 }
@@ -78,10 +62,21 @@
 @media screen and (max-width: 768px) {
   .bodyStaff{
     &__title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     }
     &__subTitle{
-      text-align: center;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .bodyStaff{
+    &__title{
+    font-size: 10rem;
+    }
+    &__subTitle{
+      font-size: 8rem;
     }
   }
 }

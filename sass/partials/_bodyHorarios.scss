@@ -1,5 +1,5 @@
 .boxHorarios{
-    background-image: url("../../images/logoNatacha.png");
+    background-image: url("../../images/horarios/logoNatacha.png");
     background-repeat: no-repeat;
     background-position: center center;
     display: grid;
@@ -8,10 +8,27 @@
 
 .tableHorarios{
     border-color: purple;
+    width: 30rem;
     
     &__title{
         font-size: 3.125rem;
         font-weight: bold;
         color: purple;
+        text-align: center;
     }
 }
+
+.horariosTitle{
+    font-size: 6rem;
+    color: purple;
+    font-weight: bolder;
+}
+
+/*MEDIAQUERI*/
+@media screen and (max-width: 320px) {
+    .boxHorarios{
+        margin-top: 10rem;
+    }
+}
+  
+ 

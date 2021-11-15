@@ -11,7 +11,7 @@ $colorHover: violet;
     align-items: center;
     &__title{
         font-weight: bolder;
-        font-size: 4rem;
+        font-size: 6rem;
         animation-name: animationTitleHome;
         animation-duration: 2s;
         animation-iteration-count: infinite;
@@ -53,13 +53,24 @@ $colorHover: violet;
         color: $colorHover;
       }
   }
+  
   ul{
     li{
       list-style: none;
     }
   }
+  
+  h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+  }
 }
 
+.imgIndex{
+  height: 30rem;
+  width: 12rem;
+}
 
 
 /*KEFRAMES*/
@@ -73,25 +84,21 @@ $colorHover: violet;
       font-weight: bold;}  
   }
 
-  @mixin  tablet {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
-}
+  
 /*MEDIAQUERI*/
 
 @media screen and (max-width: 320px) {
       .bodyHome{
         &__title{
-            font-size: 2rem;
+            font-size: 1.5rem;
             }
           
         &__anuncios{
-            font-size: 1.5rem;
+            font-size: 0.5rem;
           }
     
         &__subTitle{
-            font-size: 1.5rem;
+            font-size: 0.75rem;
           }
         
         &__iconsLink{
@@ -99,15 +106,17 @@ $colorHover: violet;
           }
     
         &__linkBodyPpal{
-          font-size: 1.5rem;
+          font-size: 1rem;
+        }
+        h2{
+          font-size: 1rem;
         }
     }
-    }
+  }
 @media screen and (max-width: 768px) {
     .bodyHome{
       &__title{
-          font-size: 2rem;
-          padding-top: 2rem;
+          font-size: 3rem;
           }
         
       &__anuncios{
@@ -128,3 +137,30 @@ $colorHover: violet;
     }
   }
 
+ 
+  @media only screen and (min-width: 2560px) {
+    .bodyHome{
+      &__title{
+          font-size: 6rem;
+          }
+        
+      &__anuncios{
+          font-size: 5rem;
+        }
+  
+      &__subTitle{
+          font-size: 5rem;
+        }
+      
+      &__iconsLink{
+        font-size: 5rem;
+        }
+  
+      &__linkBodyPpal{
+        font-size: 5rem;
+      }
+      h2{
+        font-size: 5rem;
+      }
+  }
+}

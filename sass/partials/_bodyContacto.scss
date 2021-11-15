@@ -1,23 +1,22 @@
 .boxContacto{
-    background-image: url("../../../images/logoNatacha.png");
+    background-image: url("../../images/contacto/logoNatacha.png");
     background-repeat: no-repeat;
     background-position: center center;
     display: grid;
-    margin-top: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     &__title{
         color: violet;
         font-size: 2rem;
     }
 }
 
-.formContacto{
-    display: grid;
-    color: purple;
-    border-color: purple;
-    border-width: 0.25rem;
+.bottonForm{
+    background-color: violet;
+    color: white;
+}
 
-    &__title{
-        font: bolder;
-        font-size: 5rem;
-    }
+.labelForm{
+    font-size: 1.5rem;
 }

@@ -1,8 +1,9 @@
 .bodyGalery{
-    background-image: url("../../images/logoNatacha.png");
+    background-image: url("../../images/galery/logoNatacha.png");
     background-repeat: no-repeat;
     background-position: center center;
     display: grid;
+    justify-content: center;
     &__title{
         color: purple;
         font-size: 5rem;

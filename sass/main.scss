@@ -1,42 +1,18 @@
-@import "./partials/topNav";
+@import "./partials/bodyContacto";
+@import "./partials/bodyGalery";
 @import "./partials/bodyHome";
+@import "./partials/bodyHorarios";
+@import "./partials/bodyNotFound";
 @import "./partials/bodyStaff";
 @import "./partials/descriptionStaff";
 @import "./partials/footer";
-@import "./partials/bodyContacto";
-@import "./partials/bodyHorarios";
-@import "./partials/bodyGalery";
-@import "./partials/mediaQueri";
-@import "./partials/bodyNotFoun";
-@import "./partials/bodyPrueba";
+@import "./partials/topNav";
+
+
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  #grilla {
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "main"
-    "footer";
-    grid-template-rows: 4rem auto 2rem;
-    height: 100vh;
-    margin: 0;
-    padding: 0; 
-  }
-
-  nav{
-    grid-area: nav;
-  }
-
-  main{
-    grid-area: main;
-  }
-  
-  footer{
-    grid-area: footer;
   }

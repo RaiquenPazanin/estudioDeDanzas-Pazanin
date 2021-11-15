@@ -1,5 +1,4 @@
 /*BARRA DE NAVEGACION*/
-
 .topNav {
     background: rgb(138,15,135);
     background: -moz-linear-gradient(90deg, rgba(138,15,135,0.7346288857339811) 0%, rgba(218,16,210,0.2556372890953257) 36%, rgba(252,0,255,1) 75%);
@@ -38,3 +37,15 @@
       
     }
   }
+
+  @media only screen and (min-width: 2560px) {
+    .topNav{
+      &__imgNavSize{
+        width: 5rem;
+        height: 5rem;
+    }
+    &__item{
+      font-size: 2.5rem;
+    }
+  }
+}
