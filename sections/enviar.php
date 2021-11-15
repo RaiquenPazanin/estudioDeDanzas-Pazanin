@@ -23,5 +23,5 @@ $asunto = 'Contacto desde la pagina';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("../../index.html");
+header("Location: contaco.html");
 ?>
