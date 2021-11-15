@@ -4,7 +4,7 @@ $lastName = $_POST['lastName'];
 $mail = $_POST['mail'];
 $genero = $_POST['genero'];
 $phone = $_POST['numberPhone'];
-$message = $_POST['message'];
+$message = $_POST['msg'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
@@ -23,5 +23,5 @@ $asunto = 'Contacto desde la pagina';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location: contaco.html");
+
 ?>
