@@ -2,7 +2,7 @@
 $name = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $mail = $_POST['mail'];
-$genero = $_POST['genero'];
+$age = $_POST['age'];
 $phone = $_POST['numberPhone'];
 $message = $_POST['msg'];
 
@@ -14,7 +14,7 @@ $header .= "Content-Type: text/plain";
 $message = "Este mensaje fue enviado por: " . $firsName . "  " . $lastName . "\r\n";
 $message .= "Su e-mail es: " . $mail . " \r\n";
 $message .= "Teléfono de contacto: " . $phone . " \r\n";
-$message .= "Genero: " . $genero . " \r\n";
+$message .= "Edad: " . $age . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
