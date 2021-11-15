@@ -1,0 +1,523 @@
+.boxContacto {
+  background-image: url("../../images/contacto/logoNatacha.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.boxContacto__title {
+  color: violet;
+  font-size: 2rem;
+}
+
+.bottonForm {
+  background-color: violet;
+  color: white;
+}
+
+.labelForm {
+  font-size: 1.5rem;
+}
+
+.bodyGalery {
+  background-image: url("../../images/galery/logoNatacha.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyGalery__title {
+  color: purple;
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+.bodyGalery img {
+  width: 20rem;
+  height: 15rem;
+}
+
+.bodyGalery figcaption {
+  display: none;
+}
+
+/* CUERPO PRINCIPAL Home*/
+.bodyHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../../images/fondoBodyPpal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyHome__title {
+  font-weight: bolder;
+  font-size: 6rem;
+  -webkit-animation-name: animationTitleHome;
+          animation-name: animationTitleHome;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.bodyHome__anuncios {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 3.125rem;
+  color: black;
+  list-style: none;
+}
+
+.bodyHome__subTitle {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: black;
+}
+
+.bodyHome__imgLink {
+  width: 4rem;
+  height: 4rem;
+  opacity: 0.6;
+}
+
+.bodyHome__iconsLink {
+  font-size: 4rem;
+  color: white;
+}
+
+.bodyHome__iconsLink:hover {
+  color: violet;
+}
+
+.bodyHome__linkBodyPpal {
+  color: white;
+  -webkit-text-decoration-line: unset;
+          text-decoration-line: unset;
+  font-size: 2.5rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+}
+
+.bodyHome__linkBodyPpal:hover {
+  color: violet;
+}
+
+.bodyHome ul li {
+  list-style: none;
+}
+
+.bodyHome h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+.imgIndex {
+  height: 30rem;
+  width: 12rem;
+}
+
+/*KEFRAMES*/
+@-webkit-keyframes animationTitleHome {
+  0% {
+    color: purple;
+    font-weight: bold;
+  }
+  50% {
+    color: violet;
+    font-weight: bolder;
+  }
+  100% {
+    color: purple;
+    font-weight: bold;
+  }
+}
+@keyframes animationTitleHome {
+  0% {
+    color: purple;
+    font-weight: bold;
+  }
+  50% {
+    color: violet;
+    font-weight: bolder;
+  }
+  100% {
+    color: purple;
+    font-weight: bold;
+  }
+}
+
+/*MEDIAQUERI*/
+@media screen and (max-width: 320px) {
+  .bodyHome__title {
+    font-size: 1.5rem;
+  }
+  .bodyHome__anuncios {
+    font-size: 0.5rem;
+  }
+  .bodyHome__subTitle {
+    font-size: 0.75rem;
+  }
+  .bodyHome__iconsLink {
+    font-size: 2rem;
+  }
+  .bodyHome__linkBodyPpal {
+    font-size: 1rem;
+  }
+  .bodyHome h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bodyHome__title {
+    font-size: 3rem;
+  }
+  .bodyHome__anuncios {
+    font-size: 2rem;
+  }
+  .bodyHome__subTitle {
+    font-size: 2rem;
+  }
+  .bodyHome__iconsLink {
+    font-size: 3rem;
+  }
+  .bodyHome__linkBodyPpal {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .bodyHome__title {
+    font-size: 6rem;
+  }
+  .bodyHome__anuncios {
+    font-size: 5rem;
+  }
+  .bodyHome__subTitle {
+    font-size: 5rem;
+  }
+  .bodyHome__iconsLink {
+    font-size: 5rem;
+  }
+  .bodyHome__linkBodyPpal {
+    font-size: 5rem;
+  }
+  .bodyHome h2 {
+    font-size: 5rem;
+  }
+}
+
+.boxHorarios {
+  background-image: url("../../images/horarios/logoNatacha.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tableHorarios {
+  border-color: purple;
+  width: 30rem;
+}
+
+.tableHorarios__title {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: purple;
+  text-align: center;
+}
+
+.horariosTitle {
+  font-size: 6rem;
+  color: purple;
+  font-weight: bolder;
+}
+
+/*MEDIAQUERI*/
+@media screen and (max-width: 320px) {
+  .boxHorarios {
+    margin-top: 10rem;
+  }
+}
+
+.bodyNotFound {
+  background-color: violet;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bodyNotFound__title {
+  font-size: 10rem;
+}
+
+.bodyNotFound__linkHome {
+  width: 8rem;
+  height: 4rem;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+/* SECCION STAFF */
+.bodyStaff {
+  background-image: url("../../images/staff/logoNatacha.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyStaff__title {
+  color: purple;
+  font-weight: bolder;
+  font-size: 6rem;
+  font-family: 'Urbanist', sans-serif;
+  text-align: center;
+  -webkit-animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+  animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+}
+
+.bodyStaff__subTitle {
+  text-align: center;
+  font-size: 4rem;
+}
+
+/*KEYFRAMES*/
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*MEDIAQUERI*/
+@media screen and (max-width: 320px) {
+  .bodyStaff__title {
+    font-size: 1rem;
+  }
+  .bodyStaff__subTitle {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bodyStaff__title {
+    font-size: 1.5rem;
+  }
+  .bodyStaff__subTitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .bodyStaff__title {
+    font-size: 10rem;
+  }
+  .bodyStaff__subTitle {
+    font-size: 8rem;
+  }
+}
+
+.descriptionStaff {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.descriptionStaff__imgPerf {
+  border-radius: 100%;
+  width: 32.5rem;
+  height: 32.5rem;
+}
+
+.descriptionStaff__textPhar {
+  font-size: 2rem;
+  font-family: 'Urbanist', sans-serif;
+  text-align: justify;
+}
+
+/*MEDIAQUERI*/
+@media screen and (max-width: 320px) {
+  .descriptionStaff__imgPerf {
+    width: 4rem;
+    height: 4rem;
+  }
+  .descriptionStaff__textPhar {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .descriptionStaff__imgPerf {
+    width: 2rem;
+    height: 2rem;
+  }
+  .descriptionStaff__textPhar {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .descriptionStaff__imgPerf {
+    width: 60rem;
+    height: 60rem;
+  }
+  .descriptionStaff__textPhar {
+    font-size: 4rem;
+  }
+}
+
+.footer {
+  background: #8a0f87;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(161, 102, 160, 0.735)), color-stop(36%, rgba(218, 16, 210, 0.255637)), color-stop(75%, #fc00ff));
+  background: linear-gradient(90deg, rgba(161, 102, 160, 0.735) 0%, rgba(218, 16, 210, 0.255637) 36%, #fc00ff 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a0f87",endColorstr="#fc00ff",GradientType=1);
+  margin-bottom: 0rem;
+}
+
+.footer__icons {
+  font-size: 1.25rem;
+  color: white;
+}
+
+/*MEDIAQUERI*/
+@media screen and (max-width: 320px) {
+  .footer__icons {
+    font-size: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__icons {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer__icons {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .footer__icons {
+    font-size: 3rem;
+  }
+}
+
+/*BARRA DE NAVEGACION*/
+.topNav {
+  background: #8a0f87;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(161, 102, 160, 0.735)), color-stop(36%, rgba(218, 16, 210, 0.255637)), color-stop(75%, #fc00ff));
+  background: linear-gradient(90deg, rgba(161, 102, 160, 0.735) 0%, rgba(218, 16, 210, 0.255637) 36%, #fc00ff 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a0f87",endColorstr="#fc00ff",GradientType=1);
+}
+
+.topNav__imgNavSize {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 10%;
+}
+
+.topNav__item {
+  color: white;
+}
+
+.topNav__item--activo {
+  color: black;
+  font-weight: bolder;
+  background-color: violet;
+}
+
+#colorItemTopNav {
+  color: white;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 480px) {
+  .topNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topNav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .topNav__imgNavSize {
+    width: 5rem;
+    height: 5rem;
+  }
+  .topNav__item {
+    font-size: 2.5rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
