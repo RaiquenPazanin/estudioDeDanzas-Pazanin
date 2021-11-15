@@ -18,10 +18,10 @@ $message .= "Genero: " . $genero . " \r\n";
 $message .= "Mensaje: " . $_POST['message'] . " \r\n";
 $message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'natachadanza@gmail.com';
+$para = 'natachadanza1@gmail.com';
 $asunto = 'Contacto desde la pagina';
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:index.html");
+header("../../index.html");
 ?>
